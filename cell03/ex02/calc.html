@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>It's over 9000</title>
+</head>
+<body>
+  <input id="left" type="text" placeholder="Left">
+  <select id="op">
+    <option>+</option><option>-</option><option>*</option>
+    <option>/</option><option>%</option>
+  </select>
+  <input id="right" type="text" placeholder="Right">
+  <input type="button" value="Try me!" onclick="calc()">
+
+  <script>
+    function calc() {
+      let l = document.getElementById("left").value;
+      let r = document.getElementById("right").value;
+      let op = document.getElementById("op").value;
+
+      if (!/^\d+$/.test(l) || !/^\d+$/.test(r)) 
+        return alert("Error :("), console.log("Error :(");
+
+      l = +l; r = +r;
+      if ((op=="/"||op=="%") && r==0) 
+        return alert("It's over 9000!"), console.log("It's over 9000!");
+
+      let res = eval(l+op+r);
+      alert("Result: " + res);
+      console.log("Result:", res);
+    }
+
+    setInterval(()=>alert("Please, use me..."),30000);
+  </script>
+</body>
+</html>
