@@ -1,1 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Profile Card</title>
+  <link rel="stylesheet" href="card.css">
+</head>
+<body>
+  <div class="card">
+    <h2 class="card-title">My Profile</h2>
+    <table>
+      <tr>
+        <td class="profile-pic">
+          <img src="https://via.placeholder.com/120" alt="Profile Picture">
+        </td>
+      </tr>
+      <tr>
+        <td class="login">my_login</td>
+      </tr>
+      <tr>
+        <td class="desc">Web Developer</td>
+      </tr>
+      <tr>
+        <td class="socials">
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/733/733547.png" alt="Facebook"></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/733/733579.png" alt="Twitter"></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/733/733558.png" alt="Instagram"></a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="#" class="contact-btn">Contact</a>
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>
 
