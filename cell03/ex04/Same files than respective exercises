@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+</head>
+<body>
+<table border="1">
+<tr><td id="c30">3-0</td><td id="c31">3-1</td></tr>
+<tr><td id="c32">3-2</td><td id="c33">3-3</td></tr>
+</table>
+
+<button id="b30">update 3-0</button>
+<button id="b32">add 3-2</button>
+<button id="b33">toggle 3-3</button>
+
+<script>
+$(function(){
+  $("#b30").click(()=>$("#c30").text("updated!"));
+  $("#c31").click(()=>$("#c31").toggleClass("hi"));
+  $("#b32").click(()=>$("#c32").append("<div>item</div>"));
+  $("#b33").click(()=>$("#c33").fadeToggle());
+});
+</script>
+<style>.hi{background:yellow;}</style>
+</body>
+</html>
