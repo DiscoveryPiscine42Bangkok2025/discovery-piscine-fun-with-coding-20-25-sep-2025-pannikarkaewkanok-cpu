@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Parallax Page</title>
+    <link rel="stylesheet" href="parallax.css">
+</head>
+<body>
+    <div class="parallax parallax1">
+        <div class="center-text">Welcome to the Parallax Effect</div>
+    </div>
+
+    <div class="content">
+        <h2>Some text in between</h2>
+        <p>This is a simple block with text of your choice.</p>
+    </div>
+
+    <div class="parallax parallax2">
+        <div class="center-text">Here is the Second Image</div>
+    </div>
+</body>
+</html>
