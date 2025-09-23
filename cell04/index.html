@@ -3,14 +3,71 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resume Menu</title>
+  <title>เมนูเรซูเม่</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #ffe6f2;
+      color: #4a4a4a;
+    }
+
+    header {
+      background: #ff99cc;
+      padding: 20px 0;
+      text-align: center;
+      color: white;
+      font-size: 1.8rem;
+      font-weight: bold;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+      gap: 15px;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: white;
+      background: #ff66b2;
+      padding: 12px 30px;
+      border-radius: 25px;
+      font-size: 1.2rem;
+      transition: 0.3s;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu a:hover {
+      background: #ff3385;
+      transform: translateY(-2px);
+    }
+
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
 </head>
 <body>
+  <header>
+    🌸 เลือกดูเรซูเม่ 🌸
+  </header>
+
   <div class="menu">
-    <h1>เลือกดูเรซูเม่</h1>
     <a href="cv1.html">เรซูเม่: ปัณนิการ์ แก้วกนก</a>
     <a href="cv2.html">เรซูเม่: ชนาพร แกมนิล</a>
   </div>
+
+  <footer>
+    © 2025 จัดทำเพื่อการศึกษา | Resume Project
+  </footer>
 </body>
 </html>
