@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>เรซูเม่ 2 - ชนาพร แกมนิล</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      scroll-behavior: smooth;
+    }
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+    section {
+      padding: 100px 20px;
+      min-height: 100vh;
+    }
+    #about { background-color: #f8f9fa; }
+    #experience { background-color: #ffffff; }
+    #skills { background-color: #e9ecef; }
+    #contact { background-color: #f1f1f1; }
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">เรซูเม่ 2</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">ข้อมูลส่วนตัว</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience">ประสบการณ์</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">ทักษะ</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">ติดต่อ</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- About Section -->
+<section id="about" class="text-center">
+  <div class="container">
+    <h2>ข้อมูลส่วนตัว</h2>
+    <img src="https://via.placeholder.com/150" alt="Profile" class="profile-pic my-3">
+    <h3>ชนาพร แกมนิล</h3>
+    <p>หางานพาร์ทไทม์ | พนักงานบริการ</p>
+  </div>
+</section>
+
+<!-- Experience Section -->
+<section id="experience">
+  <div class="container">
+    <h2 class="text-center">ประสบการณ์ทำงาน</h2>
+    <ul class="list-unstyled mt-4 text-center">
+      <li>พนักงานพาร์ทไทม์ โลตัสเล็ก - แคชเชียร์</li>
+      <li>พนักงานพาร์ทไทม์ บิ๊กซี สาขาใหญ่ เมกาบางนา</li>
+      <li>พนักงานเสิร์ฟอาหาร ร้านปลาทูเรสเตอร์รอง</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills">
+  <div class="container">
+    <h2 class="text-center">ทักษะ</h2>
+    <ul class="list-unstyled mt-4 text-center">
+      <li>การทำงานเป็นทีม</li>
+      <li>การสร้างมนุษย์สัมพันธ์</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="text-center">
+  <div class="container">
+    <h2>ช่องทางติดต่อ</h2>
+    <p>อีเมล: kaemninchanaphon@example.com</p>
+    <p>โทรศัพท์: +66 92 270 9608</p>
+    <p>Line ID: chjune09</p>
+    <p>Instagram: chjun3_</p>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
