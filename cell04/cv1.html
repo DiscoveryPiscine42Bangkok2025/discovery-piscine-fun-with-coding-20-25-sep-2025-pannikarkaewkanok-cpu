@@ -1,42 +1,42 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>เรซูเม่ ปัณนิการ์ แก้วกนก</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My CVs – Landing</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root{ --brand:#e91e63; --brand-50:#fff0f6; --brand-100:#ffd6e7 }
+    body{background:linear-gradient(180deg,var(--brand-50),#fff)}
+    .card{border:1px solid rgba(233,30,99,.12);transition:.2s}
+    .card:hover{transform:translateY(-4px);box-shadow:0 .75rem 1.5rem rgba(233,30,99,.15)}
+    h1{color:#c2185b}
+  </style>
 </head>
 <body>
-  <nav class="navbar">
-    <a href="#about">เกี่ยวกับฉัน</a>
-    <a href="#experience">ประสบการณ์</a>
-    <a href="#contact">ติดต่อ</a>
-  </nav>
-
-  <section id="about">
-    <img src="profile1.jpg" alt="Profile Picture" class="profile-img">
-    <h2>ปัณนิการ์ แก้วกนก</h2>
-    <p>ตัดต่อวิดีโอ | ผู้สร้างหนังสั้น SKP Chantal</p>
-  </section>
-
-  <section id="experience">
-    <h3>ประสบการณ์ทำงาน</h3>
-    <ul>
-      <li>ตัดต่อวิดีโอ , หนังสั้น SKP Chantal</li>
-    </ul>
-    <h3>ทักษะ</h3>
-    <ul>
-      <li>การใช้กล้อง</li>
-      <li>การตัดต่อ</li>
-    </ul>
-  </section>
-
-  <section id="contact">
-    <h3>ช่องทางติดต่อ</h3>
-    <p>Email: pannikarkaewkanok@gmail.com</p>
-    <p>โทร: +66 80 704 3296</p>
-    <p>Line: peppermint_06 | IG: pppeppermint_</p>
-    <a href="index.html" class="back">⬅ กลับหน้าหลัก</a>
-  </section>
+  <header class="text-center py-5">
+    <div class="container">
+      <h1 class="fw-bold mb-3">เลือกเรซูเม่</h1>
+      <p class="lead text-secondary mb-5">กดเลือกเพื่อดูรายละเอียดเรซูเม่แต่ละคน</p>
+      <div class="row g-4 justify-content-center">
+        <div class="col-12 col-md-5">
+          <a href="cv1.html" class="text-decoration-none">
+            <div class="card p-4 h-100 text-center">
+              <h2 class="h4 mb-1">เรซูเม่ 1</h2>
+              <p class="text-secondary mb-0">ปัณนิการ์ แก้วกนก</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-md-5">
+          <a href="cv2.html" class="text-decoration-none">
+            <div class="card p-4 h-100 text-center">
+              <h2 class="h4 mb-1">เรซูเม่ 2</h2>
+              <p class="text-secondary mb-0">ชนาพร แกมนิล</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
 </body>
 </html>
