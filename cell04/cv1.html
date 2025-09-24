@@ -3,40 +3,106 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My CVs – Landing</title>
+  <title>ปัณนิการ์ แก้วกนก – เรซูเม่</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    :root{ --brand:#e91e63; --brand-50:#fff0f6; --brand-100:#ffd6e7 }
-    body{background:linear-gradient(180deg,var(--brand-50),#fff)}
-    .card{border:1px solid rgba(233,30,99,.12);transition:.2s}
-    .card:hover{transform:translateY(-4px);box-shadow:0 .75rem 1.5rem rgba(233,30,99,.15)}
-    h1{color:#c2185b}
+    :root{ --brand:#e91e63; --brand-light:#fff0f6 }
+    body{scroll-padding-top:80px}
+    section{padding:80px 0}
+    .avatar{width:160px;height:160px;object-fit:cover;border-radius:50%;border:6px solid #fff;box-shadow:0 1rem 2rem rgba(233,30,99,.18)}
+    .chip{background:var(--brand-light);color:#c2185b;padding:.4rem .7rem;border-radius:999px;font-size:.9rem}
+    .card{border:1px solid rgba(233,30,99,.15)}
+    .btn-primary{background:var(--brand);border-color:var(--brand)}
   </style>
 </head>
 <body>
-  <header class="text-center py-5">
+  <!-- เพิ่ม navbar-light เพื่อให้ไอคอนมองเห็นบนพื้นขาว -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top">
     <div class="container">
-      <h1 class="fw-bold mb-3">เลือกเรซูเม่</h1>
-      <p class="lead text-secondary mb-5">กดเลือกเพื่อดูรายละเอียดเรซูเม่แต่ละคน</p>
-      <div class="row g-4 justify-content-center">
-        <div class="col-12 col-md-5">
-          <a href="cv1.html" class="text-decoration-none">
-            <div class="card p-4 h-100 text-center">
-              <h2 class="h4 mb-1">เรซูเม่ 1</h2>
-              <p class="text-secondary mb-0">ปัณนิการ์ แก้วกนก</p>
-            </div>
-          </a>
+      <a class="navbar-brand fw-bold" style="color:#c2185b" href="#home">ปัณนิการ์ แก้วกนก</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">ข้อมูลส่วนตัว</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">ประสบการณ์</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">ทักษะ</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">ติดต่อ</a></li>
+          <li class="nav-item"><a class="btn btn-sm btn-primary ms-2" href="index.html">← กลับ</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header id="home" class="py-5" style="background:var(--brand-light)">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-md-4 text-center">
+          <!-- ใช้รูปสาธารณะชั่วคราว ถ้ายังไม่มี assets/pannika.jpg -->
+          <img src="https://img2.pic.in.th/pic/1bf110f4af187f876.jpg" onerror="this.src='https://via.placeholder.com/160';" alt="ปัณนิการ์" class="avatar">
         </div>
-        <div class="col-12 col-md-5">
-          <a href="cv2.html" class="text-decoration-none">
-            <div class="card p-4 h-100 text-center">
-              <h2 class="h4 mb-1">เรซูเม่ 2</h2>
-              <p class="text-secondary mb-0">ชนาพร แกมนิล</p>
-            </div>
-          </a>
+        <div class="col-md-8 text-center text-md-start">
+          <h1 class="fw-bold mb-2" style="color:#c2185b">ปัณนิการ์ แก้วกนก</h1>
+          <p class="lead text-muted">ผู้สร้างสรรค์คอนเทนต์วิดีโอ · ตัดต่อ · กล้อง</p>
+          <div class="d-flex flex-wrap gap-2 justify-content-center justify-content-md-start">
+            <span class="chip">Video Editing</span>
+            <span class="chip">Cinematography</span>
+          </div>
         </div>
       </div>
     </div>
   </header>
+
+  <section id="about">
+    <div class="container">
+      <h2 class="h4 mb-4">ข้อมูลส่วนตัว</h2>
+      <div class="card p-4">
+        <p><strong>วันเกิด:</strong> 12/06/2549 &nbsp; <strong>อายุ:</strong> 19 ปี</p>
+        <p class="mb-0 text-muted">สนใจงานตัดต่อและเล่าเรื่องด้วยภาพเคลื่อนไหว พร้อมพัฒนาทักษะและทำงานร่วมทีม</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="bg-light">
+    <div class="container">
+      <h2 class="h4 mb-4">ประสบการณ์ทำงาน</h2>
+      <div class="card p-4 mb-3">
+        <h3 class="h6 mb-2">ตัดต่อวิดีโอ</h3>
+        <ul><li>ตัดต่อคลิปสั้น จัดภาพเสียงให้กลมกลืน</li></ul>
+      </div>
+      <div class="card p-4">
+        <h3 class="h6 mb-2">หนังสั้น SKP Chantal</h3>
+        <ul><li>มีส่วนร่วมทั้งถ่ายทำและตัดต่อ</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <h2 class="h4 mb-4">ทักษะ</h2>
+      <div class="row g-3">
+        <div class="col-md-6"><div class="card p-3 h-100"><h3 class="h6">การใช้กล้อง</h3><p>จัดมุม แสง องค์ประกอบภาพ</p></div></div>
+        <div class="col-md-6"><div class="card p-3 h-100"><h3 class="h6">การตัดต่อวิดีโอ</h3><p>Premiere Pro, CapCut, DaVinci Resolve</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="bg-light">
+    <div class="container">
+      <h2 class="h4 mb-4">ช่องทางติดต่อ</h2>
+      <div class="card p-4">
+        <p><strong>อีเมล:</strong> pannikarkaewkanok@gmail.com</p>
+        <p><strong>โทร:</strong> +66 80 704 3296</p>
+        <p><strong>Line:</strong> peppermint_06</p>
+        <div class="mt-3">
+          <a href="index.html" class="btn btn-outline-secondary">← กลับหน้าแรก</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- เพิ่ม Bootstrap JS Bundle ให้ปุ่มเมนูทำงาน -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
